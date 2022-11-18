@@ -6,7 +6,10 @@
 import scrapy
 
 
-class ChessGamesSpiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class ChessGamesItem(scrapy.Item):
+    players = scrapy.Field()
+    # outcome = scrapy.Field()
+    # place_date = scrapy.Field()
+    # opening = scrapy.Field()
+    additional_data = scrapy.Field()
+    moves = scrapy.Field()
